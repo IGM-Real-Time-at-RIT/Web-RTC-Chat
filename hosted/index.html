@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+<script src="/assets/compiled.js"></script>
+  <style>
+    #chat p {
+      width: 300px; 
+      background-color: cornflowerblue;
+      border-radius: 3px;
+      padding: 3px;
+      padding-left: 6px;
+      font-size: 1.2em;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <p>For communication to occur, you need to link both ways.
+     For example, if user "test1" and "test2" want to communicate,
+     then "test1" needs to link to "test2", and "test2" needs to link to "test1"
+  </p>
+  <label for="user">Username:</label>
+  <input id="username" name="user" type="text"/>
+  <input id="connect" type='button' value='connect'/>
+  <label for="remoteUser">Remote User:</label>
+  <input id="remoteUser" name="remoteUser" type="text"/>
+  <input id="link" type="button" value="link"/>
+  <br/>
+  <label for="message">Message:</label>
+  <input id="message" name="message" type="text"/>
+  <input id="send" type="button" value="send" />
+
+  <div id='chat'>
+  </div>
+</body>
+</html>
