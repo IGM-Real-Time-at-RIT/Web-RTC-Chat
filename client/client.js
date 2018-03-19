@@ -14,7 +14,7 @@ const receive = (data) => {
 const send = (username, peers) => {
   const messageString = document.querySelector("#message").value;
   const message = `${username}: ${messageString}`;
-  receive(message); /add to our screen
+  receive(message); //add to our screen
   
   //for each peer connection (sending connections, not receiving connections)
   for(let i = 0; i < peers.length; i++) {
